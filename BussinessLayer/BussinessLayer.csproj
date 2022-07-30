@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Business_Logic\Business\" />
+    <Folder Include="Business_Logic\Interfaces\" />
+    <Folder Include="Constants\" />
+    <Folder Include="IUnitOfWork\IUnitOfWork_Crud\" />
+    <Folder Include="Seeds\" />
+    <Folder Include="Services\" />
+    <Folder Include="UnitOfWork\UnitOfWork_Crud\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
+  </ItemGroup>
+
+</Project>
